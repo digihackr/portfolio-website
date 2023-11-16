@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio | Home Page</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!--===ICON===-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+
+    <!--===GOOGLE FONTS===-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+
+    <!--===CSS===-->
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/footer.css" />
+  </head>
+
+  <body>
+    <!--===NAVBAR===-->
+    <header>     
+      <div id="topHeader">
+        <div class="container-fluid">
+          <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+            <a class="navbar-brand" href="home.html">
+              <img src="assets/images/mylogo.png" width="100px" />
+            </a>
+            <button
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggler"
+              type="button"
+              class="navbar-toggler">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" style="margin-left: 20px" href="home.html">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" style="margin-left: 20px" href="aboutMe.html">ABOUT</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" style="margin-left: 20px" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!--===END OF NAVBAR===-->
+
+
+    <!--===PAGE CONTENT===-->
+    <section class="main-page-section">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <img class="mt-4 img-fluid" src="assets/images/profile picture.png">
+          </div>
+          <p class="col-12 page-section-mid text-center">Hi, <span class="span-name">I'm Saptarshi,<br></span><span id="element"></span></p>
+          <p class="col-12 content-bottom text-center">Just a kid who's trying to do better!</i></p>
+        </div>
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fa-solid fa-3x fa-code"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+      </div>
+    </section>
+    <!--===END OF PAGE CONTENT===-->
+
+    <!--===FOOTER===-->
+    <footer class="footer text-center">
+
+      <!--===SOCIAL BAR===-->
+      <div class="container top-footer">
+        <div class="row">
+          <div class="col-lg-4 mb-3 mb-lg-0 mt-3">
+            <h4>ADDRESS</h4>
+            <p class="lead mb-0">176/2 Bandana Neer, Kali Temple Road, Nimta, Kolkata - 700049</p>
+          </div>
+
+          <div class="col-lg-4 mb-3 mb-lg-0 mt-3">
+            <h4>SOCIALS</h4>
+            <a href="https://www.facebook.com/rionz.rishi/" class="btn btn-outline-dark btn-social mx-2 p-3"><i class="fa-brands fa-2x fa-facebook"></i></a>
+            <a href="https://www.instagram.com/b_u_c_k_y/" class="btn btn-outline-dark btn-social mx-2 p-3 mb-1"><i class="fa-brands fa-2x fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/saptarshi-majumder-b466a624a/" class="btn btn-outline-dark btn-social mx-2 p-3"><i class="fa-brands fa-2x fa-linkedin"></i></a>
+            <a href="https://github.com/digihackr" class="btn btn-outline-dark btn-social mx-2 p-3"><i class="fa-brands fa-2x fa-github"></i></a>
+          </div>
+
+          <div class="col-lg-4 mb-3 mb-lg-0 mt-3">
+            <h4>CONTACT</h4>
+            <a class="email-link" href="mailto:majumderrishi18@gmail.com"><i class="fa-solid fa-envelope"></i> majumderrishi18@gmail.com</a>
+          </div>
+        </div>
+      </div>
+      <!--===END OF SOCIAL BAR===-->
+
+      <!--===COPYRIGHT===-->
+      <div class="copyright text-center py-4 mt-4">
+        <div class="container">
+          <div class="col-12">
+            <small>Copyright &copy; Saptarshi 2023 - All rights reserved</small>
+          </div>
+        </div>
+      </div>
+      <!--===END OF COPYRIGHT===-->
+    </footer>
+    <!--===END OF FOOTER-->
+  </body>
+
+
+   <!--===JAVASCRIPT CODE===-->
+   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+   <script>
+   var typed = new Typed("#element", {
+     strings: ["a Frontend Developer.","a Python Developer."],
+     typeSpeed: 70, 
+     showCursor: false,
+     loop: true
+   });
+   </script>
+
+  <script src="bootstrap/js/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+  <script src="bootstrap/fontawesome-free-6.4.0-web/js/all.js"></script>
+  
+</html>
